@@ -1,26 +1,29 @@
 import {
   angular,
   backend,
-  carrent,
+  caliaguaImages,
+  vialappIamges,
+  sgc1Images,
+  csharp,
   css,
+  expressjs,
   flutter,
   git,
   html,
   javascript,
-  jobit,
-  meta,
+  vpmobileImages,
   mobile,
   mongodb,
   netCore,
   nodejs,
   reactjs,
-  shopify,
-  starbucks,
+  senagua,
   tailwind,
-  tesla,
   threejs,
   tripguide,
   typescript,
+  unach,
+  vial25,
   web
 } from "../assets";
 
@@ -73,6 +76,10 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "C#",
+    icon: csharp,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
@@ -108,60 +115,154 @@ const technologies = [
     name: ".Net",
     icon: netCore,
   },
+  {
+    name: "ExpressJs",
+    icon: expressjs,
+  },
+  
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Desarrollador de Software",
+    company_name: "Ministerio del Ambiente, Agua y Transición Ecológica",
+    icon: senagua,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Octubre 2022 - Febrero 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrolle una aplicacion web con Php 8 para la gestion de fichas de calidad del agua, la cual sirvio a las comunidades aledañas de Riobamba verificar la los niveles del contaminación del agua",
+      
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Analista de sistemas",
+    company_name: "Unach",
+    icon: unach,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Mayo 2023 - Agosto 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrolle una aplicacion web con Net Core 7 para el departamento de relaciones Nacionales e Internacionales de la UNACH",
+      "Participe en el desarrollo de servicios para la notificacion de correos de la aplicacion web",
+
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Auditor y Desarrollador de Software",
+    company_name: "Vial25",
+    icon: vial25,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Julio 2024 - Actualidad",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrollo y analisis de informes acerca de las discrepancias del sistema de peaje SYRIC",
+      "Colabore con el equipo de TI para el mantenimiento de servidores HPE ProLiant, NAS y NVRs",
+      "Desarrolle e implemente VialApp una aplicacion web y mobil para la gestion de denominacion de la boveda con Flutter, Nodejs y Angular",
     ],
+  },
+  
+];
+
+const projects = [
+  {
+    name: "Caliagua",
+    description:
+      "Aplicacion web para la gestion de fichas de calidad de agua, con generacion de reportes de fichas, estadisticos y gestion de usuarios por roles.",
+    tags: [
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: caliaguaImages,
+    source_code_link: "https://github.com/rpintodev/caliagua",
+  },
+  
+  {
+    name: "SGIC",
+    description:
+      "Aplicacion web para la gestión de instrumentos de cooperación, generacion de reportes y notificaciones por correo para seguimiento de las dependencias",
+    tags: [
+      {
+        name: ".netcore",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "blazor",
+        color: "green-text-gradient",
+      },
+      {
+        name: "apirest",
+        color: "pink-text-gradient",
+      },
+   
+    ],
+    image: sgc1Images,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "VialApp - Mobile",
+    description:
+      "Aplicacion mobile para la gestion de denominaciones en tiempo real, control de las transacciones entre los cajeros y supervisores, generación de informes operativos y sincronización offline para transacciones sin conexion",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SocketIO",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "RestApi",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: vpmobileImages,
+    source_code_link: "https://github.com/rpintodev/vialapp-front-flutter",
+  },
+  {
+    name: "VialApp - Web",
+    description:
+      "Aplicacion web para la gestion de denominaciones en tiempo real, dashboard de boveda y transacciones, generación de informes operativos y control de roles de usuarios",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SocketIO",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "JWT",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "RestApi",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: vialappIamges,
+    source_code_link: "https://github.com/rpintodev/vialapp-web",
   },
 ];
 
@@ -192,70 +293,5 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
 
-export { experiences, projects, services, technologies, testimonials };
+export { experiences,projects, services, technologies, testimonials };

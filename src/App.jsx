@@ -7,7 +7,6 @@ import StarsCanvas from "./components/canvas/Stars";
 const App=()=> {
 
   return (
-    <>
       <BrowserRouter>
         <div className="relative z-0 bg-primary ">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
@@ -17,17 +16,15 @@ const App=()=> {
         
         <About/>
         <Experience/>
-        <Tech/>
         <Works/>
-        <Feedbacks/>
-        </div>
+        
         <div className="relative z-0">
-          <Contact/>
           <StarsCanvas/>
+          <Contact/>
+        </div>
         </div>
       </BrowserRouter>
     
-    </>
   )
 }
 
