@@ -4,68 +4,69 @@ import {motion} from 'framer-motion'
 import {styles } from '../style'
 import {github} from '../assets'
 import {fadeIn,textVariant} from '../utils/motion'
-import Slider from 'react-slick';
 import {SectionWrapper} from '../hoc'
+import Slider from 'react-slick';
 
 
-const ProyectCard = ({index,name,description,tags,image,source_code_link})=> {
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: true
-  };
-  return(
-    <motion.div variants={fadeIn('up','spring',index*0.5,0.75)}>
+
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  source_code_link,
+}) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{max:45, scale:1,speed:450}}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full' 
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-      <div className='relative w-full h-[230px]'>
-        
-      <Slider {...sliderSettings}>
-            {image.map((img, i) => (
-              <div key={i}>
-                <img
-                  src={img}
-                  alt={`${name} image ${i}`}
-                  className='w-full h-[230px] object-contain rounded-2xl'
-                />
-              </div>
-            ))}
-          </Slider>
-        <div className='absolute inset-0 flex 
-        justify-end m-3 card-img_hover'>
-          <div
-            onClick={()=> window.open(source_code_link,'_blank')}
-            className='black-gradien w-10 h-10 rounded-full flex justify-center
-            items-center cursor-pointer'
-          >
-            <img src={github} alt='github' className='w-1/2 h-1/2  object-contain' />
+        <div className='relative w-full h-[230px]'>
+          <img
+            src={image}
+            alt='project_image'
+            className='w-full h-full object-cover rounded-2xl'
+          />
+
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img
+                src={github}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
           </div>
         </div>
-        
-      </div>
-      <div className='mt-5'>
-          <h5 className='text-white font-bold text-[24px]'>{name}</h5>
+
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
-      <div className='mt-4 flex flex-wrap gap-2'>
-        {tags.map((tag) =>(
-          <p key={tag.name} className={`text=[14px] ${tag.color}`}>
-            #{tag.name}
-          </p>
-        ))}
-      </div>
-      </Tilt>
 
+        <div className='mt-4 flex flex-wrap gap-2'>
+          {tags.map((tag) => (
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
   return (
@@ -89,9 +90,9 @@ const Works = () => {
          las tecnologías utilizadas y un enlace al repositorio en GitHub.
       </motion.p>
       </div>
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap gap-7 max-w-screen-md mx-auto'>
         {projects.map((proyect,index)=>(
-          <ProyectCard 
+          <ProjectCard 
           key={`proyect-${index}`}
           index = {index}
           {...proyect}
@@ -101,6 +102,6 @@ const Works = () => {
     </>
 
   )
-}
+} 
 
 export default SectionWrapper ( Works, '')

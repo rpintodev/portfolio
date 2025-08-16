@@ -1,9 +1,10 @@
 import {
   angular,
   backend,
-  caliaguaImages,
-  vialappIamges,
-  sgc1Images,
+  caliagua2,
+  vialapp2,
+  sgic2,
+  vpmobile2,
   csharp,
   css,
   expressjs,
@@ -11,7 +12,6 @@ import {
   git,
   html,
   javascript,
-  vpmobileImages,
   mobile,
   mongodb,
   netCore,
@@ -20,7 +20,6 @@ import {
   senagua,
   tailwind,
   threejs,
-  tripguide,
   typescript,
   unach,
   vial25,
@@ -180,7 +179,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: caliaguaImages,
+    image: caliagua2,
     source_code_link: "https://github.com/rpintodev/caliagua",
   },
   
@@ -203,7 +202,7 @@ const projects = [
       },
    
     ],
-    image: sgc1Images,
+    image: sgic2,
     source_code_link: "https://github.com/",
   },
   {
@@ -232,7 +231,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: vpmobileImages,
+    image: vpmobile2,
     source_code_link: "https://github.com/rpintodev/vialapp-front-flutter",
   },
   {
@@ -261,7 +260,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: vialappIamges,
+    image: vialapp2,
     source_code_link: "https://github.com/rpintodev/vialapp-web",
   },
 ];

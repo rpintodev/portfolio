@@ -42,7 +42,6 @@ import caliagua2 from "./projects/caliagua2.png";
 import caliagua3 from "./projects/caliagua3.png";
 import caliagua4 from "./projects/caliagua4.png";
 
-import sgic1 from "./projects/sgic1.png";
 import sgic2 from "./projects/sgic2.jpg";
 import sgic3 from "./projects/sgic3.png";
 import sgic4 from "./projects/sgic4.png";
@@ -62,16 +61,12 @@ import vialapp4 from "./projects/vialapp4.jpg";
 
 
 
-const caliaguaImages = [caliagua1, caliagua2, caliagua3, caliagua4];
-const sgc1Images = [sgic1, sgic2, sgic3, sgic4,sgic5];
-const vpmobileImages = [vpmobile1, vpmobile2, vpmobile3, vpmobile4,vpmobile5,vpmobile6];
-const vialappIamges = [vialapp1, vialapp2, vialapp3, vialapp4];
 
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  angular, backend, caliaguaImages, close, creator, csharp, css,sgc1Images,vpmobileImages,vialappIamges,
+  angular, backend, close, creator, csharp, css,sgic2,vialapp2,caliagua2,vpmobile2,
   docker, expressjs, figma,
   flutter, git, github, html,
   javascript, jobit, logo, menu, meta, mobile, mongodb, netCore, nodejs, reactjs, redux, senagua, shopify, tailwind, threejs, tripguide, typescript, unach, vial25, web
