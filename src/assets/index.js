@@ -59,7 +59,7 @@ import vialapp2 from "./projects/vialapp2.jpg";
 import vialapp3 from "./projects/vialapp3.jpg";
 import vialapp4 from "./projects/vialapp4.jpg";
 
-
+import ecuasia from "./projects/ecuasia.png";
 
 
 import jobit from "./jobit.png";
@@ -67,7 +67,7 @@ import tripguide from "./tripguide.png";
 
 export {
   angular, backend, close, creator, csharp, css,sgic2,vialapp2,caliagua2,vpmobile2,
-  docker, expressjs, figma,
+  docker, expressjs, figma,ecuasia,
   flutter, git, github, html,
   javascript, jobit, logo, menu, meta, mobile, mongodb, netCore, nodejs, reactjs, redux, senagua, shopify, tailwind, threejs, tripguide, typescript, unach, vial25, web
 };
