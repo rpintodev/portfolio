@@ -24,6 +24,7 @@ import {
   typescript,
   unach,
   vial25,
+  produbanco,
   web
 } from "../assets";
 
@@ -151,14 +152,25 @@ const experiences = [
     company_name: "Vial25",
     icon: vial25,
     iconBg: "#E6DEDD",
-    date: "Julio 2024 - Actualidad",
+    date: "Julio 2024 - Noviembre 2025",
     points: [
       "Desarrollo y analisis de informes acerca de las discrepancias del sistema de peaje SYRIC",
       "Colabore con el equipo de TI para el mantenimiento de servidores HPE ProLiant, NAS y NVRs",
       "Desarrolle e implemente VialApp una aplicacion web y mobil para la gestion de denominacion de la boveda con Flutter, Nodejs y Angular",
     ],
   },
-  
+  {
+    title: "Ingeniero de Software",
+    company_name: "Produbanco",
+    icon: produbanco,
+    iconBg: "#ffffff",
+    date: "Noviembre 2025 - Actualidad",
+    points: [
+      "Modernización del sistema core de cartera bancaria.",
+      "Migración de Monolito a Microservicios con arquitectura hexagonal, utilizando .Net Core, Docker y Kubernetes",
+      "Implementación de pruebas unitarias y de integración para garantizar la calidad del software",
+    ],
+  },
 ];
 
 const projects = [
